@@ -59,7 +59,7 @@ body {
   letter-spacing: 0.3em;
   line-height: 52px;
   padding: 0 36px;
-  margin: 0 12px 16px 0;
+  margin: 30px 12px 16px 0;
   color: var(--white-color);
   text-decoration: none;
   text-align: center;
@@ -151,6 +151,13 @@ h5 {
   height: 90px;
 }
 
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .header-sticky {
   position: fixed;
   top: 0;
@@ -214,6 +221,11 @@ h5 {
   min-height: 500px;
 }
 
+.hero .container {
+  padding-left: 0;
+  padding-right: 32px;
+}
+
 .hero-content {
   text-align: left;
   align-self: center;
@@ -244,7 +256,7 @@ h5 {
 
 .hero-img {
   position: absolute;
-  left: -40px;
+  left: 0;
   top: -100px;
   height: calc(100% + 200px);
   width: 400px;
@@ -532,24 +544,8 @@ h5 {
 }
 
 .project-box a {
-  display: inline-block;
-}
-
-.project-box:hover .project-mask {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.project-box:hover .project-mask .project-caption {
-  bottom: -60px;
-  opacity: 0;
-}
-
-.project-box:hover .project-img {
-  transform: scale(1);
-  transition: none;
-  width: 100%;
-  cursor: pointer;
+  display: block;
+  position: relative;
 }
 
 .project-img {
@@ -563,65 +559,32 @@ h5 {
   transform-origin: center;
 }
 
-.project-mask {
-  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
-  height: 100%;
+.project-overlay {
   position: absolute;
-  transition: all 0.5s ease-in-out 0s;
-  width: 100%;
-  top: 0;
-  left: 0;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(12, 22, 24, 0) 0%, rgba(12, 22, 24, 0.8) 70%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 24px;
   opacity: 0;
   visibility: hidden;
-  overflow: hidden;
+  transition: opacity 0.35s ease, visibility 0.35s ease;
+  pointer-events: none;
 }
 
-.project-mask p {
-  text-transform: uppercase;
-  font-size: 11px;
-  letter-spacing: 1.5px;
-  font-weight: 400;
-  margin-top: 0;
-  text-align: left;
+.project-box:hover .project-overlay {
+  opacity: 1;
+  visibility: visible;
 }
 
-.project-mask .project-caption {
-  position: absolute;
-  bottom: -60px;
-  left: 0;
-  padding-left: 30px;
-  padding-right: 30px;
-  text-align: left;
-  transition: all 0.5s ease-in-out 0s;
-  opacity: 0;
-}
-
-.project-mask p {
-  text-transform: uppercase;
-  font-size: 11px;
-  letter-spacing: 1.5px;
-  font-weight: 400;
-  margin-top: 0;
-  text-align: left;
-}
-
-.project-info {
-  text-align: center;
-  margin: 18px auto 32px;
-  max-width: 480px;
-}
-
-.project-heading {
-  font-size: 1.125rem;
+.project-caption {
+  color: var(--white-color);
+  font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 8px;
-  color: var(--primary-accent);
-}
-
-.project-copy {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: var(--supportive-text-color);
+  margin: 0;
+  text-align: left;
+  width: 100%;
 }
 
 .project-box:hover .project-img.rotate-ccw {

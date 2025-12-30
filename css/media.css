@@ -53,6 +53,11 @@
     font-size: 36px;
   }
 
+  .hero .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
   .hero-row {
     flex-direction: column;
     row-gap: 40px;
