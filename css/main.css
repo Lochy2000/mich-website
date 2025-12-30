@@ -558,6 +558,11 @@ h5 {
   transition: all 2s cubic-bezier(0.23, 1, 0.32, 1) 0s;
 }
 
+.project-img.rotate-ccw {
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
 .project-mask {
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
   height: 100%;
@@ -598,6 +603,29 @@ h5 {
   font-weight: 400;
   margin-top: 0;
   text-align: left;
+}
+
+.project-info {
+  text-align: center;
+  margin: 18px auto 32px;
+  max-width: 480px;
+}
+
+.project-heading {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--primary-accent);
+}
+
+.project-copy {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--supportive-text-color);
+}
+
+.project-box:hover .project-img.rotate-ccw {
+  transform: rotate(-90deg);
 }
 
 /* Contact */
@@ -834,4 +862,56 @@ h5 {
   80% {
     top: 0;
   }
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.lightbox-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 85vh;
+  object-fit: contain;
+  animation: zoom 0.3s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 50px;
+  font-weight: 300;
+  transition: 0.3s;
+  cursor: pointer;
+  line-height: 1;
+  user-select: none;
+}
+
+.lightbox-close:hover,
+.lightbox-close:focus {
+  color: #bbb;
 }
