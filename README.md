@@ -1,6 +1,7 @@
 # Simple Developer Portfolio Template
 
-![Project Preview](portfolio_preview.jpg)
+<img width="1890" height="1002" alt="image" src="https://github.com/user-attachments/assets/b3cd7ffc-13de-46cf-8879-9bbac53b8999" />
+
 
 ## Description
 
