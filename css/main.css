@@ -29,6 +29,7 @@ body {
   color: var(--main-text-color);
   font-family: "Poppins", sans-serif;
   letter-spacing: -0.15px;
+  overflow-x: hidden;
 }
 
 .container {
@@ -203,6 +204,7 @@ h5 {
 
 /* Hero section */
 .hero {
+  --hero-img-width: clamp(320px, 25vw, 520px);
   position: relative;
   padding-top: 80px;
   padding-bottom: 120px;
@@ -217,7 +219,7 @@ h5 {
   align-items: center;
   gap: 60px;
   position: relative;
-  padding-left: 450px;
+  padding-left: calc(var(--hero-img-width) + 40px);
   min-height: 500px;
 }
 
@@ -259,7 +261,7 @@ h5 {
   left: 0;
   top: -100px;
   height: calc(100% + 200px);
-  width: 400px;
+  width: var(--hero-img-width);
   z-index: 1;
 }
 
@@ -295,6 +297,7 @@ h5 {
 
   .hero-img {
     position: relative;
+    flex: 0 1 auto;
     top: 0;
     left: 0;
     width: 100%;
