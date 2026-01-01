@@ -224,6 +224,9 @@ h5 {
 }
 
 .hero .container {
+  max-width: none;
+  width: 100%;
+  margin: 0;
   padding-left: 0;
   padding-right: 32px;
 }
@@ -280,7 +283,11 @@ h5 {
   }
 
   .hero .container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
     padding-left: 32px;
+    padding-right: 32px;
   }
 
   .hero-row {
