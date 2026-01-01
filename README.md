@@ -24,7 +24,7 @@ This is a very simple, but elegant responsive portfolio template built using pla
 
 ## Live Preview
 
-Check out the live preview of the Simple Developer Portfolio [here](https://hhlitval.github.io/simple-portfolio-template).
+Check out the live preview of the Simple Developer Portfolio [here](http://creativecompanions.art/).
 
 ## Usage
 
