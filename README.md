@@ -1,6 +1,7 @@
 # Simple Developer Portfolio Template
 
-![Project Preview](portfolio_preview.jpg)
+<img width="1890" height="1002" alt="image" src="https://github.com/user-attachments/assets/b3cd7ffc-13de-46cf-8879-9bbac53b8999" />
+
 
 ## Description
 
@@ -23,7 +24,7 @@ This is a very simple, but elegant responsive portfolio template built using pla
 
 ## Live Preview
 
-Check out the live preview of the Simple Developer Portfolio [here](https://hhlitval.github.io/simple-portfolio-template).
+Check out the live preview of the Simple Developer Portfolio [here](http://creativecompanions.art/).
 
 ## Usage
 
