@@ -271,6 +271,57 @@ h5 {
   object-position: center top;
 }
 
+@media (max-width: 992px) {
+  .hero {
+    padding-top: 120px;
+    padding-bottom: 80px;
+  }
+
+  .hero .container {
+    padding-left: 32px;
+  }
+
+  .hero-row {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0;
+    min-height: auto;
+    gap: 30px;
+  }
+
+  .hero-content {
+    padding: 0;
+  }
+
+  .hero-img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .hero-img img {
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding-top: 100px;
+  }
+
+  .hero-content {
+    text-align: left;
+  }
+
+  .hero-img {
+    max-width: 300px;
+  }
+}
+
 .hero-scroll-arrow {
   position: absolute;
   bottom: 30px;
