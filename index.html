@@ -774,6 +774,23 @@ I am a creative nanny in The Hague, working to bring more creativity, confidence
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script>
+      // Close sidebar when a navigation link is clicked
+      const navLinks = document.querySelectorAll('.nav-link');
+      const navBtn = document.getElementById('nav-btn');
+      const nav = document.getElementById('nav');
+      
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          // Remove the active class to close the menu
+          nav.classList.remove('active');
+          // Change button back to open state if needed
+          if (navBtn) {
+            navBtn.click();
+          }
+        });
+      });
+    </script>
     <script type="module" src="js/main.js"></script>
   </body>
 </html>
