@@ -46,12 +46,35 @@
         margin: 12px 0;
       }
       .info-box a {
-        color: #0066cc;
+        display: inline-block;
+        background-color: #000000;
+        color: #ffffff;
         text-decoration: none;
-        font-weight: 500;
+        font-weight: 600;
+        padding: 12px 28px;
+        border-radius: 25px;
+        margin-top: 15px;
+        transition: all 0.3s ease;
       }
       .info-box a:hover {
-        text-decoration: underline;
+        background-color: #333333;
+      }
+      /* Pink/taupe button styling for service page buttons */
+      .services-btn {
+        background-color: #E4B4BD !important;
+        border-color: #E4B4BD !important;
+        color: #ffffff !important;
+      }
+      .services-btn:hover {
+        background-color: #d9a3ad !important;
+        border-color: #d9a3ad !important;
+      }
+      /* Pink/taupe title styling for gallery and about me pages */
+      #gallery .title {
+        color: #E4B4BD;
+      }
+      #about .title {
+        color: #E4B4BD;
       }
     </style>
   </head>
@@ -209,8 +232,8 @@ I am a creative nanny in The Hague, working to bring more creativity, confidence
           <p>I am insured for personal and professional liability during our time together.</p>
           
           <div style="margin-top: 30px; text-align: center;">
-            <a href="#about" class="btn btn-white" style="margin-right: 15px; display: inline-block;">More About Me</a>
-            <a href="#gallery" class="btn btn-white" style="display: inline-block;">Gallery</a>
+            <a href="#about" class="btn btn-white services-btn" style="margin-right: 15px; display: inline-block;">More About Me</a>
+            <a href="#gallery" class="btn btn-white services-btn" style="display: inline-block;">Gallery</a>
           </div>
         </div>
       </div>
@@ -258,6 +281,9 @@ I am a creative nanny in The Hague, working to bring more creativity, confidence
             <p>Education has always been something I've been very passionate about. I went through a very competitive schooling system in the UK as a teenager and longer for more spaces for creativity outside of this very formal education. I went to art school at Central Saint Martins and Goldsmiths University in London, before moving to Berlin. Here I worked in a creative technology school, <a href="https://www.schoolofma.org/" target="_blank" rel="noopener noreferrer">School of Machines, Make and Making-believe</a>, where I was being exposed to many different pedagogical approaches to art education. I was living communally and with children, making art together after school and on the weekends. So when I moved to The Hague, this was something I wanted to keep up. I started volunteering with <a href="https://vitalismaatjes.nl/?gad_source=1&gad_campaignid=18960591810&gbraid=0AAAAADLpfhKd6oaRtDBZsmr-KyBPz8acg&gclid=CjwKCAiA7LzLBhAgEiwAjMWzCEFa0DAEanqXB1vZAaG1ffY16-QzkyLfpxntrQy4RPTfsv3b3prxWxoCftIQAvD_BwE" target="_blank" rel="noopener noreferrer">Vitalis</a> as a buddy to children around The Hague. As kindred creatives, we naturally pursued artistic projects together and this is also when I realised how empowering it was to encourage kids in their creative pursuits this way.</p>
 
             <p>My approach to art has always been a very social and collaborative one, rather than a strictly professional ambition. I believe that creativity serves a greater and higher role in society than being locked into galleries - this is why I choose to spend my energy on creative nannying, because I sincerely wish for the world to be a more creative and imaginative place, and that it is not only artists who hold this capacity.</p>
+            <div style="margin-top: 40px; text-align: center;">
+              <a href="#gallery" class="btn btn-white services-btn" style="display: inline-block;">Gallery</a>
+            </div>
           </div>
         </div>
       </div>
