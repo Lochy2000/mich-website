@@ -49,6 +49,26 @@
 }
 
 @media (max-width: 977px) {
+  .project-overlay {
+    position: static;
+    background: transparent;
+    opacity: 1;
+    visibility: visible;
+    display: block;
+    padding: 16px 0 24px 0;
+    align-items: flex-start;
+  }
+
+  .project-box:hover .project-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .project-caption {
+    color: var(--main-text-color);
+    text-align: left;
+  }
+
   .title {
     font-size: 36px;
   }
