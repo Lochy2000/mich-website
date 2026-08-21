@@ -1,9 +1,12 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", () => {
-  AOS.init({
-    once: true,
-  });
+  if (typeof AOS !== "undefined") {
+    AOS.init({
+      once: true,
+    });
+    document.documentElement.classList.add("aos-enabled");
+  }
 
   const nav = document.querySelector("#nav");
   const navBtn = document.querySelector("#nav-btn");
